@@ -8,6 +8,6 @@ In our implementation we use a ball tree data structure to efficiently carry out
 
 http://130.203.136.95/viewdoc/summary?doi=10.1.1.91.8209
 
-We also use a max priority queue to keep track of the closest points seen so far as we search for the nearest neighbors of a given data point. The code for our max priority queue is contained in outliers/maxpq.py. Finally, oultliers/local_outlier_factor.py contains the class LocalOutlierFactor that the user can use to compute the local outlier factors for the points in their data set. We give a demo of the different features of the LocalOutlierFactor in the file outliers_demo.ipynb.
+We also use a max priority queue to keep track of the closest points seen so far as we search for the nearest neighbors of a given data point. The code for our max priority queue is contained in outliers/maxpq.py. Finally, outliers/local_outlier_factor.py contains the class LocalOutlierFactor that the user can use to compute the local outlier factors for the points in their data set. We give a demo of the different features of the LocalOutlierFactor class in the file outliers_demo.ipynb.
 
 In the future we hope to add an example where we apply our implementation of this algorithm to a real-world data set that has nice examples of outliers.
