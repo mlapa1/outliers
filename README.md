@@ -10,4 +10,4 @@ http://130.203.136.95/viewdoc/summary?doi=10.1.1.91.8209
 
 We also use a max priority queue to keep track of the closest points seen so far as we search for the nearest neighbors of a given data point. The code for our max priority queue is contained in outliers/maxpq.py. Finally, outliers/local_outlier_factor.py contains the class LocalOutlierFactor that the user can use to compute the local outlier factors for the points in their data set. We give a demo of the different features of the LocalOutlierFactor class in the file outliers_demo.ipynb.
 
-In the future we hope to add an example where we apply our implementation of this algorithm to a real-world data set that has nice examples of outliers.
+In the file bitcoin_outlier_analysis.ipynb we apply the local outlier factor algorithm to identify outliers in Bitcoin transaction data. In particular, we show that this algorithm is able to identify certain famous transactions in the history of the Bitcoin blockchain.
