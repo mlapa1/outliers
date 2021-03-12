@@ -17,7 +17,7 @@ def input_amount(input_list):
     
     return answer
 
-# This function computes the total input amount in a transaction.
+# This function computes the total output amount in a transaction.
 def output_amount(output_list):
     answer = 0
     for item in output_list:
@@ -25,7 +25,7 @@ def output_amount(output_list):
     
     return answer
     
-# This function counts the number of unique input addresses
+# This function counts the number of unique input addresses in a transaction.
 def num_unique_input_addresses(input_list):
     d = {}
     for item in input_list:
@@ -40,9 +40,9 @@ def num_unique_input_addresses(input_list):
 # using the Blockchain Data API from 
 # https://www.blockchain.com/api/blockchain_api
 
-# The particular blocks that we are downloaded all contain famous transactions
-# from the history of Bitcoin. They are all described in this article:
-# https://news.bitcoin.com/eight-historic-bitcoin-transactions/
+# The particular blocks that we are downloading here all contain famous 
+# transactions from the history of Bitcoin. They are all described in this 
+# article: https://news.bitcoin.com/eight-historic-bitcoin-transactions/
 
 # Load data of block 170. Satoshi Nakamoto sends 50 BTC to Hal Finney.
 # with urlopen("https://blockchain.info/rawblock/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee") as response:
